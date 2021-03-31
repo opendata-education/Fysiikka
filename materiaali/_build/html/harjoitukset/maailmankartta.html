@@ -1,0 +1,493 @@
+
+<!DOCTYPE html>
+
+<html lang="fi">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Datan esittäminen kartalla &#8212; Maantiede</title>
+    
+  <link rel="stylesheet" href="../_static/css/index.f658d18f9b420779cfdf24aa0a7e2d77.css">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+  <link rel="stylesheet"
+    href="../_static/vendor/open-sans_all/1.44.1/index.css">
+  <link rel="stylesheet"
+    href="../_static/vendor/lato_latin-ext/1.44.1/index.css">
+
+    
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/sphinx-book-theme.40e2e510f6b7d1648584402491bb10fe.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/translation_fi.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.d3f166471bb80abb5163.js">
+
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="../_static/translations.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/sphinx-book-theme.d31b09fe5c1d09cb49b26a786de4a05d.js"></script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <link rel="canonical" href="https://opendata-education.github.io/Maantiede/intro.html/harjoitukset/maailmankartta.html" />
+    <link rel="shortcut icon" href="../_static/logo.png"/>
+    <link rel="index" title="Sisällysluettelo" href="../genindex.html" />
+    <link rel="search" title="Etsi" href="../search.html" />
+    <link rel="next" title="Interaktiiviset kartat" href="interaktiivinen_kartta.html" />
+    <link rel="prev" title="Tervetuloa avoimen datan pariin" href="../intro.html" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+
+
+<!-- Opengraph tags -->
+<meta property="og:url"         content="https://opendata-education.github.io/Maantiede/intro.html/harjoitukset/maailmankartta.html" />
+<meta property="og:type"        content="article" />
+<meta property="og:title"       content="Datan esittäminen kartalla" />
+<meta property="og:description" content="Datan esittäminen kartalla  Tässä harjoituksessa tarkoituksena on esittää maailman valtioiden vuotuiset hiilidioksidipäästöt henkilöä kohden kartan muodossa. Da" />
+<meta property="og:image"       content="https://opendata-education.github.io/Maantiede/intro.html/_static/logo.png" />
+
+<meta name="twitter:card" content="summary" />
+
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+<a class="navbar-brand text-wrap" href="../index.html">
+  
+  <img src="../_static/logo.png" class="logo" alt="logo">
+  
+  
+  <h1 class="site-logo" id="site-title">Maantiede</h1>
+  
+</a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Hae tästä kirjasta ..." aria-label="Hae tästä kirjasta ..." autocomplete="off" >
+</form>
+<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+    <ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../intro.html">
+   Tervetuloa avoimen datan pariin
+  </a>
+ </li>
+</ul>
+<p class="caption collapsible-parent">
+ <span class="caption-text">
+  Harjoitukset
+ </span>
+</p>
+<ul class="current nav sidenav_l1">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Datan esittäminen kartalla
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="interaktiivinen_kartta.html">
+   Interaktiiviset kartat
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lampotila_sademaara.html">
+   Lämpötila ja sademäärä
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="openstreetmap.html">
+   Open Street Map
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lyhimman_reitin_analyysi.html">
+   Lyhimmän reitin analyysi
+  </a>
+ </li>
+</ul>
+
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="row topbar fixed-top container-xl">
+    <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show">
+    </div>
+    <div class="col pl-2 topbar-main">
+        
+        <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+            data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+            aria-expanded="true" aria-label="Vaihda navigointia" aria-controls="site-navigation"
+            title="Vaihda navigointia" data-toggle="tooltip" data-placement="left">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-arrow-left"></i>
+            <i class="fas fa-arrow-up"></i>
+        </button>
+        
+        
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Lataa tämä sivu"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/harjoitukset/maailmankartta.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Lataa lähdetiedosto" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Tulosta PDF-tiedostoon"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+        <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/opendata-education/Maantiede"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Lähteen arkisto"><i
+                    class="fab fa-github"></i>arkisto</button></a>
+        <a class="issues-button"
+            href="https://github.com/opendata-education/Maantiede/issues/new?title=Issue%20on%20page%20%2Fharjoitukset/maailmankartta.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Avaa ongelma"><i class="fas fa-lightbulb"></i>avoin ongelma</button></a>
+        
+    </div>
+</div>
+
+
+        <!-- Full screen (wrap in <a> to have style consistency -->
+        <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+                data-placement="bottom" onclick="toggleFullScreen()" aria-label="Koko näytön tila"
+                title="Koko näytön tila"><i
+                    class="fas fa-expand"></i></button></a>
+
+        <!-- Launch buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://mybinder.org/v2/gh/opendata-education/Maantiede/main?urlpath=tree/materiaali/harjoitukset/maailmankartta.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Tuoda markkinoille Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="../_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        
+        
+    </div>
+</div>
+
+    </div>
+
+    <!-- Table of contents -->
+    <div class="d-none d-md-block col-md-2 bd-toc show">
+        
+        <div class="tocsection onthispage pt-5 pb-3">
+            <i class="fas fa-list"></i> Sisällys
+        </div>
+        <nav id="bd-toc-nav">
+            <ul class="nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#datan-hankinta-ja-lataaminen">
+   Datan hankinta ja lataaminen
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#datan-visualisoiminen">
+   Datan visualisoiminen
+  </a>
+ </li>
+</ul>
+
+        </nav>
+        
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="datan-esittaminen-kartalla">
+<h1>Datan esittäminen kartalla<a class="headerlink" href="#datan-esittaminen-kartalla" title="Permalink to this headline">¶</a></h1>
+<p>Tässä harjoituksessa tarkoituksena on esittää maailman valtioiden vuotuiset hiilidioksidipäästöt henkilöä kohden kartan muodossa. Data voitaisiin esittää monin eri tavoin, kuten vaikkapa taulukossa, josta voisi suhteellisen helposti etsiä tietty valtion ja sen hiilidioksidipäästöt. Jos tavoitteenamme on kuitenkin saada kokonaiskuva kaikkien valtioiden päästöistä, on datan esittäminen kartalla oiva valinta. Piirrämme siis maailmankartan, ja väritämme valtiot sitä tummemmaksi, mitä suuremmat hiilidioksidipäästöt niillä on.</p>
+<p>Tässä esimerkissä käytetty data on peräisin <a class="reference external" href="https://databank.worldbank.org/home">Maailmanpankin sivustolla</a>, josta on saatavilla paljon muutakin mielenkiintoista dataa.</p>
+<div class="section" id="datan-hankinta-ja-lataaminen">
+<h2>Datan hankinta ja lataaminen<a class="headerlink" href="#datan-hankinta-ja-lataaminen" title="Permalink to this headline">¶</a></h2>
+<p>Aloitetaan hankkimalla haluamamme data. Tätä esimerkkiä varten tarvittava tiedosto on valmiiksi ladattu ja löytyy kansiosta ’data’ nimellä ’CO2-emissions-per-capita-2014.csv’. Hiilidioksidipäästödata on peräisin osoitteesta <a class="reference external" href="https://databank.worldbank.org/source/world-development-indicators">https://databank.worldbank.org/source/world-development-indicators#</a>.</p>
+<p>Valtioiden rajat, joita piirtämiseen tarvitaan voitaisiin lukea vektorimuotoisena .shp-päätteisestä tiedostosta. Nämä tiedot löytyvät kuitenkin valmiina <a class="reference external" href="https://geopandas.org/">GeoPandas</a>-kirjastossa. Halutessaan valtioiden rajoista voi ladata korkeampiresoluutioisen version esimerkiksi osoitteesta <a class="reference external" href="https://www.naturalearthdata.com/downloads/">https://www.naturalearthdata.com/downloads/</a>. Netistä löytyy myös muita .shp-tiedostoja, jotka voivat sisältää esimerkiksi Suomen kunnat.</p>
+<p>Datatiedostojen lukemiseen käytetään yleensä <a class="reference external" href="https://pandas.pydata.org/">Pandas</a>-kirjastoa. Geodatan (valtioiden rajat .shp-tiedostona) lukemiseen käytetään kuitenkin GeoPandasia. Aloitetaan datan tutkiminen tuomalla tarvittavat kirjastot. Datan visualisointia varten tarvitaan <a class="reference external" href="https://matplotlib.org/">matplotlib</a>-kirjastoa.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>             <span class="c1"># Pandas-kirjastolla luetaan ja käsitellään dataa</span>
+<span class="kn">import</span> <span class="nn">geopandas</span> <span class="k">as</span> <span class="nn">gpd</span>         <span class="c1"># GeoPandas on kuin Pandas, mutta sisältää myös geometristä dataa</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span> <span class="c1"># Matplotlib-kirjastolla visualisoidaan data</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>GeoPandas sisältää valmiiksi muutamia geometrisia tietoja, joista yksi on valtioiden rajat.
+Luetaan kyseinen data ja katsotaan, mitä se sisältää.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Luetaan geometrinen data valtioille ja tallennetaan tiedot muuttujaan &#39;world&#39;</span>
+<span class="n">world</span> <span class="o">=</span> <span class="n">gpd</span><span class="o">.</span><span class="n">read_file</span><span class="p">(</span><span class="n">gpd</span><span class="o">.</span><span class="n">datasets</span><span class="o">.</span><span class="n">get_path</span><span class="p">(</span><span class="s1">&#39;naturalearth_lowres&#39;</span><span class="p">))</span>
+
+<span class="c1"># Tulostetaan muutama ensimmäinen rivi datasta</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">world</span><span class="o">.</span><span class="n">head</span><span class="p">())</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>     pop_est      continent                      name iso_a3  gdp_md_est  \
+0     920938        Oceania                      Fiji    FJI      8374.0   
+1   53950935         Africa                  Tanzania    TZA    150600.0   
+2     603253         Africa                 W. Sahara    ESH       906.5   
+3   35623680  North America                    Canada    CAN   1674000.0   
+4  326625791  North America  United States of America    USA  18560000.0   
+
+                                            geometry  
+0  MULTIPOLYGON (((180.00000 -16.06713, 180.00000...  
+1  POLYGON ((33.90371 -0.95000, 34.07262 -1.05982...  
+2  POLYGON ((-8.66559 27.65643, -8.66512 27.58948...  
+3  MULTIPOLYGON (((-122.84000 49.00000, -122.9742...  
+4  MULTIPOLYGON (((-122.84000 49.00000, -120.0000...  
+</pre></div>
+</div>
+</div>
+</div>
+<p>Kuten nähdään, tiedosto sisältää useita sarakkeita, joista meidän kannaltamme tärkeimmät ovat ”name”, joka kertoo valtion nimen ja ”geometry”, joka sisältää valtion rajojen tiedot.</p>
+<p>Voimme piirtää geopandasilla lukemamme datan suoraan käyttämällä ’plot’-käskyä</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">world</span><span class="o">.</span><span class="n">plot</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.axes._subplots.AxesSubplot at 0x7fe69aa0f3a0&gt;
+</pre></div>
+</div>
+<img alt="../_images/maailmankartta_10_1.png" src="../_images/maailmankartta_10_1.png" />
+</div>
+</div>
+<p>Datasta hahmottuu selkeästi maailmankartta. Seuraavaksi pitäisi vielä saada valtiot väritettyä hiilidioksidipäästöjen mukaisesti.</p>
+<p>Luetaan hiilidioksidipäästödata ja katsotaan, mitä se pitää sisällään.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Luetaan CO2-päästöjen data ja tallennetaan se muuttujaan &#39;CO2_2014&#39;.</span>
+<span class="c1"># Huom. joidenkin maiden nimeä on muokattu vastaamaan nimiä aiemmin ladatussa tiedostossa.</span>
+<span class="n">CO2_2014</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;../data/CO2-emissions-per-capita-2014.csv&#39;</span><span class="p">)</span>
+
+<span class="c1"># Tulostetaan muutama ensimmäinen rivi datasta</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">CO2_2014</span><span class="o">.</span><span class="n">head</span><span class="p">())</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>     Country Name Country Code                             Series Name  \
+0     Afghanistan          AFG  CO2 emissions (metric tons per capita)   
+1         Albania          ALB  CO2 emissions (metric tons per capita)   
+2         Algeria          DZA  CO2 emissions (metric tons per capita)   
+3  American Samoa          ASM  CO2 emissions (metric tons per capita)   
+4         Andorra          AND  CO2 emissions (metric tons per capita)   
+
+      Series Code      2014 [YR2014]  
+0  EN.ATM.CO2E.PC  0.253727945460333  
+1  EN.ATM.CO2E.PC   1.90006971019389  
+2  EN.ATM.CO2E.PC   3.73580277736793  
+3  EN.ATM.CO2E.PC                 ..  
+4  EN.ATM.CO2E.PC   5.83290621488897  
+</pre></div>
+</div>
+</div>
+</div>
+<p>Huomataan, että hiilidioksidipäästöjen data on sarakkeessa ”2014 [YR2014]” yksikössä tonnia per henkilö (vuodessa). Lisäksi valtioiden nimen tai koodin sisältävä sarake on nimetty eri tavalla kuin toisessa datatiedostossa. Tämä täytyy ottaa huomioon datatiedostoja yhdistettäessä. Kun haluamme piirtää valtiokohtaista dataa kartalle, meidän on yhdistettävä eri datasetit siten, että saman valtion geometriatiedot yhdistyvät sen hiilidioksiditietoihin. Tämä onnistuu ’merge’-funktiolla.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<span class="c1"># Varmistetaan, että päästöluvut on annettu numeroina eikä tekstinä</span>
+<span class="n">CO2_2014</span> <span class="o">=</span> <span class="n">CO2_2014</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;..&#39;</span><span class="p">,</span><span class="n">np</span><span class="o">.</span><span class="n">nan</span><span class="p">)</span>
+<span class="n">CO2_2014</span><span class="p">[</span><span class="s1">&#39;2014 [YR2014]&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">CO2_2014</span><span class="p">[</span><span class="s1">&#39;2014 [YR2014]&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="s1">&#39;float64&#39;</span><span class="p">)</span>
+
+<span class="c1"># Yhdistetään &#39;world&#39;-data &#39;name&#39; sarakkeen mukaan &#39;CO2_2014&#39;-datan &#39;Country Name&#39;-sarakkeeseen.</span>
+<span class="n">data</span> <span class="o">=</span> <span class="n">world</span><span class="o">.</span><span class="n">merge</span><span class="p">(</span><span class="n">CO2_2014</span><span class="p">,</span> <span class="n">left_on</span><span class="o">=</span><span class="s1">&#39;name&#39;</span><span class="p">,</span> <span class="n">right_on</span><span class="o">=</span><span class="s1">&#39;Country Name&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="datan-visualisoiminen">
+<h2>Datan visualisoiminen<a class="headerlink" href="#datan-visualisoiminen" title="Permalink to this headline">¶</a></h2>
+<p>Nyt kun data on yhdistetty, voimme piirtää sen plot-funktiolla. Parametreiksi plot-funktiolle annamme sen sarakkeen nimen, jonka mukaan haluamme valtiot värittää, kuvan koon sekä värikartan (’Greens’).</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">data</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">column</span><span class="o">=</span><span class="s1">&#39;2014 [YR2014]&#39;</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">50</span><span class="p">,</span><span class="mi">20</span><span class="p">),</span> <span class="n">cmap</span><span class="o">=</span><span class="s1">&#39;Greens&#39;</span><span class="p">,</span> <span class="n">legend</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">k</span><span class="o">=</span><span class="mi">6</span><span class="p">)</span> <span class="c1"># 6 eri väriä</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.axes._subplots.AxesSubplot at 0x7fe698103940&gt;
+</pre></div>
+</div>
+<img alt="../_images/maailmankartta_17_1.png" src="../_images/maailmankartta_17_1.png" />
+</div>
+</div>
+<p>Nyt näemme jo, että eri valtioiden päästöt ovat erilaiset. Kuvasta on kuitenkin vaikea hahmottaa, minkä valtioden päästöt ovat suurimpia.</p>
+<p>Matplotlib jakaa värit automaattisesti siten, että kukin väri vastaa yhtä suurta osaa tarkasteluvälillä (0,04 - 43,52). Jakauma ei ole kuitenkaan tasainen, joten parempi tapa olisi jakaa värit siten, että kuhunkin väriin osuisi suunnilleen sama määrä valtioita. Tämä on tehty seuraavassa koodisolussa. Piirretään lisäksi taustalle kaikki valtiot harmaalla, jotta näemme, mistä valtioista ei ole dataa saatavilla.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Valmistellaan kuva, tehdään kuvasta suuri ja asetetaan taustaväriksi sininen</span>
+<span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">50</span><span class="p">,</span><span class="mi">20</span><span class="p">),</span> <span class="n">facecolor</span><span class="o">=</span><span class="s1">&#39;lightblue&#39;</span><span class="p">)</span>
+
+<span class="c1"># Piirretään taustaksi kaikki maat ja täytetään ne viivoilla.</span>
+<span class="c1"># Tällöin ne maat, joista ei ole dataa, erottuvat helpommin.</span>
+<span class="n">world</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">ax</span><span class="o">=</span><span class="n">ax</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;darkgrey&#39;</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.8</span><span class="p">,</span> <span class="n">hatch</span><span class="o">=</span> <span class="s2">&quot;///&quot;</span><span class="p">)</span>
+
+<span class="c1"># Piirretään data taustan päälle</span>
+<span class="n">data</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span>
+    <span class="n">column</span><span class="o">=</span><span class="s1">&#39;2014 [YR2014]&#39;</span><span class="p">,</span> <span class="c1"># Määritetään piirrettävä sarake</span>
+    <span class="n">ax</span><span class="o">=</span><span class="n">ax</span><span class="p">,</span>                  <span class="c1"># Piirretään kuva samalle akselille kuin tausta</span>
+    <span class="n">cmap</span><span class="o">=</span><span class="s1">&#39;Greens&#39;</span><span class="p">,</span>          <span class="c1"># Käytetään vihreää värikarttaa </span>
+    <span class="n">legend</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>            <span class="c1"># Lisätään selite</span>
+    <span class="n">legend_kwds</span><span class="o">=</span><span class="p">{</span>           <span class="c1">#</span>
+        <span class="s1">&#39;fontsize&#39;</span><span class="p">:</span> <span class="mi">25</span><span class="p">,</span>     <span class="c1"># Asetetaan selitteen fonttikoko</span>
+        <span class="s1">&#39;loc&#39;</span><span class="p">:</span><span class="s1">&#39;center left&#39;</span> <span class="c1"># Asetetaan selitteen sijainti</span>
+    <span class="p">},</span>                      <span class="c1">#</span>
+    <span class="n">scheme</span><span class="o">=</span><span class="s1">&#39;quantiles&#39;</span><span class="p">,</span>     <span class="c1"># Jaetaan datan värit samankokoisiin osiin</span>
+    <span class="n">k</span><span class="o">=</span><span class="mi">6</span>                     <span class="c1"># Valitaan osien lukumääräksi 6</span>
+<span class="p">)</span>
+
+<span class="c1"># Lisätään kuvalle otsikko</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Hiilidioksidipäästöt henkilöä kohden (tonnia vuodessa)&#39;</span><span class="p">,</span><span class="n">fontsize</span> <span class="o">=</span> <span class="mi">40</span><span class="p">)</span>
+
+<span class="c1"># Poistetaan akselit kuvan reunoilta</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">axis</span><span class="p">(</span><span class="s1">&#39;off&#39;</span><span class="p">)</span>
+
+<span class="c1"># näytetään kuva</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../_images/maailmankartta_19_0.png" src="../_images/maailmankartta_19_0.png" />
+</div>
+</div>
+<p>Nyt kartasta erottaa jo huomattavasti paremmin eri alueet ja niitä vastaavat hiilidioksidipäästöt. Voit kokeilla piirtää datan myös jakamalla datan useampaan tai vähempään kuin kuuteen osaan. Miltä data tällöin näyttää? Muokkaa kuvaa haluamallasi tavalla.</p>
+<p>Etsi itse jokin toinen valtiokohtainen data ja piirrä se samaan tapaan. Valtiokohtaista dataa löytää googlaamalla tai esimerkiksi osoitteesta <a class="reference external" href="https://databank.worldbank.org/source/world-development-indicators">https://databank.worldbank.org/source/world-development-indicators#</a>. Maailmanpankin sivuilta pystyy myös tarkastelemaan dataa kartalla, mutta kokeile piirtää se itse!</p>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./harjoitukset"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        </div>
+    </div>
+    
+    
+    <div class='prev-next-bottom'>
+        
+    <a class='left-prev' id="prev-link" href="../intro.html" title="previous page">Tervetuloa avoimen datan pariin</a>
+    <a class='right-next' id="next-link" href="interaktiivinen_kartta.html" title="next page">Interaktiiviset kartat</a>
+
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By Juha Teuho<br/>
+        
+          <div class="extra_footer">
+            <div>
+<a>Toteutettu Opetushallituksen valtionavustuksella tiedekasvatuksen edistämiseen.</a></br><a href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img class="license" alt="Creative Commons License" src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png" /></a> Tämän sivuston materiaali on käytettävissä seuraavalla lisenssillä: <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC-BY 4.0.</a>
+</div>    
+
+          </div>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+
+    
+  <script src="../_static/js/index.d3f166471bb80abb5163.js"></script>
+
+
+    
+  </body>
+</html>
