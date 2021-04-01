@@ -1,6 +1,9 @@
 # Table of contents
 # Learn more at https://jupyterbook.org/customize/toc.html
 - file: intro
+- part: Harjoitukset
+  chapters:
+  - file: harjoitukset/taivasta-kartoittamassa
 - part: Hiukkasfysiikka
   chapters:
   - file: harjoitukset/cms-esimerkki
