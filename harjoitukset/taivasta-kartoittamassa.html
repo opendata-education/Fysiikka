@@ -1,0 +1,516 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Taivasta kartoittamassa - mitä näemme yllämme? &#8212; Fysiikka</title>
+    
+  <link rel="stylesheet" href="../_static/css/index.f658d18f9b420779cfdf24aa0a7e2d77.css">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+  <link rel="stylesheet"
+    href="../_static/vendor/open-sans_all/1.44.1/index.css">
+  <link rel="stylesheet"
+    href="../_static/vendor/lato_latin-ext/1.44.1/index.css">
+
+    
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/sphinx-book-theme.e7340bb3dbd8dde6db86f25597f54a1b.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/translation_fi.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.d3f166471bb80abb5163.js">
+
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/sphinx-book-theme.7d483ff0a819d6edff12ce0b1ead3928.js"></script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <link rel="canonical" href="https://opendata-education.github.io/Fysiikka/intro.html/harjoitukset/taivasta-kartoittamassa.html" />
+    <link rel="shortcut icon" href="../_static/logo.png"/>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="CMS ja avoin data" href="cms-esimerkki.html" />
+    <link rel="prev" title="Tervetuloa avoimen datan pariin" href="../intro.html" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+
+
+<!-- Opengraph tags -->
+<meta property="og:url"         content="https://opendata-education.github.io/Fysiikka/intro.html/harjoitukset/taivasta-kartoittamassa.html" />
+<meta property="og:type"        content="article" />
+<meta property="og:title"       content="Taivasta kartoittamassa - mitä näemme yllämme?" />
+<meta property="og:description" content="Taivasta kartoittamassa - mitä näemme yllämme?  Tähdet ovat aina kiehtoneet ihmismieltä, mutta mitä me varsinaisesti näemme paitsi kauniiden, kirkkaiden pisteid" />
+<meta property="og:image"       content="https://opendata-education.github.io/Fysiikka/intro.html/_static/logo.png" />
+
+<meta name="twitter:card" content="summary" />
+
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+<a class="navbar-brand text-wrap" href="../index.html">
+  
+  <img src="../_static/logo.png" class="logo" alt="logo">
+  
+  
+  <h1 class="site-logo" id="site-title">Fysiikka</h1>
+  
+</a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form>
+<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+    <ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../intro.html">
+   Tervetuloa avoimen datan pariin
+  </a>
+ </li>
+</ul>
+<p class="caption collapsible-parent">
+ <span class="caption-text">
+  Harjoitukset
+ </span>
+</p>
+<ul class="current nav sidenav_l1">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Taivasta kartoittamassa - mitä näemme yllämme?
+  </a>
+ </li>
+</ul>
+<p class="caption collapsible-parent">
+ <span class="caption-text">
+  Hiukkasfysiikka
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="cms-esimerkki.html">
+   CMS ja avoin data
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="cms-animaatio.html">
+   CMS animaatio
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="cms-sovite.html">
+   Funktion sovittaminen histogrammiin
+  </a>
+ </li>
+</ul>
+
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/harjoitukset/taivasta-kartoittamassa.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/opendata-education/Fysiikka"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://github.com/opendata-education/Fysiikka/issues/new?title=Issue%20on%20page%20%2Fharjoitukset/taivasta-kartoittamassa.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        
+    </div>
+</div>
+
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+            <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+                    data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+                    title="Fullscreen mode"><i
+                        class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://mybinder.org/v2/gh/opendata-education/Fysiikka/main?urlpath=tree/materiaali/harjoitukset/taivasta-kartoittamassa.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="../_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        
+        
+    </div>
+</div>
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+        <div class="tocsection onthispage pt-5 pb-3">
+            <i class="fas fa-list"></i>
+            Contents
+        </div>
+        <nav id="bd-toc-nav">
+            <ul class="nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#milta-data-nayttaa">
+   Miltä data näyttää?
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#kerro-kerro-kuvaaja">
+   Kerro, kerro, kuvaaja
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#tahdistot">
+   Tähdistöt
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#aurinko-lahin-tahtemme">
+   Aurinko, lähin tähtemme
+  </a>
+ </li>
+</ul>
+
+        </nav>
+        
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="taivasta-kartoittamassa-mita-naemme-yllamme">
+<h1>Taivasta kartoittamassa - mitä näemme yllämme?<a class="headerlink" href="#taivasta-kartoittamassa-mita-naemme-yllamme" title="Permalink to this headline">¶</a></h1>
+<p>Tähdet ovat aina kiehtoneet ihmismieltä, mutta mitä me varsinaisesti näemme paitsi kauniiden, kirkkaiden pisteiden peiton?</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># AJA TÄMÄ SOLU ENSIN! Tässä otetaan käyttöön tarvittavat python-paketit.</span>
+
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Otetaan tarkasteltavaksi joukko tietoja yllämme näkyvistä kohteista, joiden laajemmat versiot löytyvät selityksineen osoitteesta http://www.astronexus.com/hyg HYG-tietokannasta. Pääpiirteissään kyseessä on sellaisten tähtien joukko, jotka ovat joko tarpeeksi kirkkaita näkyäkseen Maasta käsin tai lähellä Aurinkoa (noh, tähtitieteellisessä mitassa lähellä, 75 valovuoden etäisyydellä).</p>
+<p>Mistä HYG on lyhenne? Käypä selvittämässä!</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Ajamalla tämän solun saat käyttöösi suuren katalogin tähtien tietoja.</span>
+<span class="c1"># Kiitokset Adam Lameelle helposti luettavan setin luomisesta.</span>
+
+<span class="n">taivas</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;https://raw.githubusercontent.com/adamlamee/CODINGinK12/master/data/stars.csv&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="milta-data-nayttaa">
+<h2>Miltä data näyttää?<a class="headerlink" href="#milta-data-nayttaa" title="Permalink to this headline">¶</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Tällä komennolla näet muuttujan ylimmät rivit. Mitä käy jos vaihdat suluissa olevaa numeroa tai poistat sen?</span>
+
+<span class="n">taivas</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Tällä komennolla voit tarkistaa, montako riviä dataa on.</span>
+
+<span class="nb">len</span><span class="p">(</span><span class="n">taivas</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Taulukosta nähdään joukko kryptisiä sarakkeita. Tarkemmat selitykset löytyvät <a class="reference external" href="http://www.astronexus.com/hyg">Astronexuksen sivulta</a>, mutta oleellisimmat lienevät tähtien paikkatiedot (rektaskensio “ra”, deklinaatio “dec”, etäisyys “dist”) ja valaisuun liittyvät ominaisuudet (havaittu magnitudi “mag” ja absoluuttinen kirkkaus “absmag”, lämpötila “temp” sekä luminositeetti “lum”). Ryhdytään nyt tarkastelemaan mitä näistä voidaan nähdä.</p>
+<p>(Tutustu rektaskensioon ja deklinaatioon <a class="reference external" href="https://fi.wikipedia.org/wiki/Rektaskensio">täällä</a>.)</p>
+</div>
+<div class="section" id="kerro-kerro-kuvaaja">
+<h2>Kerro, kerro, kuvaaja<a class="headerlink" href="#kerro-kerro-kuvaaja" title="Permalink to this headline">¶</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Tässä otetaan &quot;taivas&quot;-tietorakenteesta kaksi saraketta ja luodaan niiden arvopareista kuvaaja.</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">15</span><span class="p">,</span> <span class="mi">4</span><span class="p">))</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">taivas</span><span class="o">.</span><span class="n">ra</span><span class="p">,</span> <span class="n">taivas</span><span class="o">.</span><span class="n">dec</span><span class="p">,</span> <span class="n">s</span><span class="o">=</span><span class="mf">0.01</span><span class="p">)</span> <span class="c1"># Mitä tietoja tässä käytettiin?</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlim</span><span class="p">(</span><span class="mi">24</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Kaikkien katalogissa olevien tähtien paikat Maasta katsottuna </span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Tarvitsen nimen&#39;</span><span class="p">)</span> <span class="c1"># Korjaapa tämä otsikko sopivaksi!</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Akseloin, siis olen&#39;</span><span class="p">)</span> <span class="c1"># Korjaapa tämä otsikko sopivaksi!</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+
+<span class="c1"># Näetkö muotoja kuvassa? Mistä moiset voisivat johtua?</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Tähtiä luokitellaan usein lämpötilansa ja kirkkautensa mukaan, siten että kirkkaammilla tähdillä on pienempi absoluuttinen magnitudi. Auringolla se on noin 4,8 (vai oliko? Mitä sanoo tarkastelemamme data?).</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Piirretään taas x,y-parien mukainen kuvaaja, jonka pisteitä</span>
+<span class="c1"># käsitellään hieman niin, että niistä erottaakin jotakin.</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span> <span class="o">=</span> <span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="mi">10</span><span class="p">))</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">taivas</span><span class="o">.</span><span class="n">temp</span><span class="p">,</span> <span class="n">taivas</span><span class="o">.</span><span class="n">absmag</span><span class="p">,</span> <span class="n">s</span> <span class="o">=</span> <span class="mi">1</span><span class="p">,</span> <span class="n">edgecolors</span> <span class="o">=</span> <span class="s1">&#39;none&#39;</span><span class="p">,</span> <span class="n">color</span> <span class="o">=</span> <span class="s2">&quot;red&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlim</span><span class="p">(</span><span class="mi">2000</span><span class="p">,</span><span class="mi">15000</span><span class="p">)</span> <span class="c1"># Mitä käy jos säädät näitä numeroita?</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylim</span><span class="p">(</span><span class="mi">20</span><span class="p">,</span><span class="o">-</span><span class="mi">15</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Keksipäs tähän kiva otsikko </span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span> <span class="c1"># Muokkaa tämä sopivammaksi.</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">&quot;Absoluuttinen magnitudi&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">&quot;Pintalämpötila (K)&quot;</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Painottuvatko tulokset jonnekin? Erottuvatko jotkin alueet muusta massasta? Löydätkö kuvasta kirkkaan, muttei erityisen lämpimän alueen (jättiläisiä)? Erityisen kuuman ja kirkkaan, mutta pienistä tähdistä koostuvan valkoisten kääpiöiden alueen?</p>
+</div>
+<div class="section" id="tahdistot">
+<h2>Tähdistöt<a class="headerlink" href="#tahdistot" title="Permalink to this headline">¶</a></h2>
+<p>Harvempi tähti on yksinäinen, vaan useimmiten ne kuuluvat suurempiin tähtijoukkoihin joille on annettu erilaisia nimiä pitkin vuosituhansia ja kulttuuripiirejä. Kansainväliseen käyttöön vakiintuneimmat nimet ovat eurooppalaista perua ja löytyvät “taivas”-tietorakenteen sarakkeesta “con” (constellation, tähdistö).</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Tämä poimii sarakkeesta listan lyhenteitä, jotka vastaavat tähdistöjen nimiä.</span>
+
+<span class="n">taivas</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="s1">&#39;con&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">con</span><span class="o">.</span><span class="n">unique</span><span class="p">()</span> <span class="c1"># Pystytkö sanallistamaan, mitä tällä rivillä käskettiin?</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Tarkastellaan seuraavaksi, miten voisimme luokitella kunkin tähdistön sisältämiä tähtiä toisiinsa ja poimia sieltä joitain kiinnostavia yksilöitä.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Tämä näyttää yhden tähdistön, vaihda kysyttyä lyhennettä alla ja tutki muitakin!</span>
+<span class="c1"># Komento .query(&#39;...&#39;) antaa etsiä tietyntyyppistä dataa koko aineistosta.</span>
+
+<span class="n">constellation</span> <span class="o">=</span> <span class="n">taivas</span><span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="s1">&#39;con == &quot;Vir&quot;&#39;</span><span class="p">)</span>
+
+<span class="c1"># Käytetään &quot;subplot&quot;-ominaisuutta piirtämään useita asioita yhtä aikaa.</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span> <span class="mi">4</span><span class="p">))</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">subplot</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+
+<span class="c1"># Tällä saat näkyviin kyseisen tähdistön 10 kirkkainta. Mitäs jos .headin arvoa muuttaisi?</span>
+
+<span class="n">constellation</span> <span class="o">=</span> <span class="n">constellation</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="s1">&#39;mag&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">constellation</span><span class="o">.</span><span class="n">ra</span><span class="p">,</span> <span class="n">constellation</span><span class="o">.</span><span class="n">dec</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">gca</span><span class="p">()</span><span class="o">.</span><span class="n">invert_xaxis</span><span class="p">()</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Tähdistön kuva taivaalla </span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Rektaskensio&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Deklinaatio&#39;</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">subplot</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+
+<span class="c1"># Okei, mutta mites nämä suhtautuvat koko käsiteltyyn aineistoon? Nyt lyödäänkin yhden tähdistön kirkkaimmat</span>
+<span class="c1"># pisteet koko kartalle näkyviin.</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">taivas</span><span class="o">.</span><span class="n">temp</span><span class="p">,</span> <span class="n">taivas</span><span class="o">.</span><span class="n">absmag</span><span class="p">,</span> <span class="n">s</span> <span class="o">=</span> <span class="mi">1</span><span class="p">,</span> <span class="n">edgecolors</span> <span class="o">=</span> <span class="s1">&#39;none&#39;</span><span class="p">,</span> <span class="n">alpha</span> <span class="o">=</span> <span class="mf">0.2</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">constellation</span><span class="o">.</span><span class="n">temp</span><span class="p">,</span> <span class="n">constellation</span><span class="o">.</span><span class="n">absmag</span><span class="p">,</span> <span class="n">color</span> <span class="o">=</span> <span class="s1">&#39;red&#39;</span><span class="p">,</span> <span class="n">edgecolors</span> <span class="o">=</span> <span class="s1">&#39;none&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlim</span><span class="p">(</span><span class="mi">2000</span><span class="p">,</span><span class="mi">15000</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylim</span><span class="p">(</span><span class="mi">20</span><span class="p">,</span><span class="o">-</span><span class="mi">15</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Verrattuna koko taivaaseen </span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">&quot;Absoluuttinen magnitudi&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">&quot;Lämpötila (K)&quot;</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Miten tuloksesi asettuvat tähtien elinkaarta kuvaavalle Hertzsprung-Russell -kuvaajalle? (huomaa akselit!)</p>
+<img alt="https://8green2017.files.wordpress.com/2013/04/hr_diagram.jpg" src="https://8green2017.files.wordpress.com/2013/04/hr_diagram.jpg" />
+</div>
+<div class="section" id="aurinko-lahin-tahtemme">
+<h2>Aurinko, lähin tähtemme<a class="headerlink" href="#aurinko-lahin-tahtemme" title="Permalink to this headline">¶</a></h2>
+<p>Aurinko on monin tavoin tärkeä meille ihmisille, niin planeettamme elämän mahdollistajana kuin parhaana tutkimuskohteenakin selvittäessämme, miten tähdet toimivat. Verrattuna kaikkeen muuhun koko aurinkokunnassa se on valtava, mutta kaikkien tähtien joukossa melkoinen höyhensarjalainen. Tarkastellaan vielä, miten se vertautuu näihin lähisukulaisiinsa.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Aurinko, Sol, voidaan etsiä erilleen muista hakukomennolla.</span>
+
+<span class="n">aurinko</span> <span class="o">=</span> <span class="n">taivas</span><span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="s1">&#39;proper == &quot;Sol&quot;&#39;</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">aurinko</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Jos nyt haluaisimme esimerkiksi vertailla sen lämpötilaa muihin...</span>
+
+<span class="n">isommat</span> <span class="o">=</span> <span class="n">taivas</span><span class="p">[</span><span class="n">taivas</span><span class="o">.</span><span class="n">temp</span> <span class="o">&gt;</span> <span class="nb">float</span><span class="p">(</span><span class="n">aurinko</span><span class="o">.</span><span class="n">temp</span><span class="p">)]</span> <span class="c1"># tässä float() on tarpeen muuttamaan</span>
+                                                    <span class="c1"># tyypit samanlaisiksi, eli liukuluvuiksi</span>
+<span class="n">pienet</span> <span class="o">=</span> <span class="n">taivas</span><span class="p">[</span><span class="n">taivas</span><span class="o">.</span><span class="n">temp</span> <span class="o">&lt;</span> <span class="nb">float</span><span class="p">(</span><span class="n">aurinko</span><span class="o">.</span><span class="n">temp</span><span class="p">)]</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Aurinkoa kuumempia tähtiä on listassa &quot;</span> <span class="o">+</span> <span class="nb">repr</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">isommat</span><span class="p">)))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Aurinkoa kylmempiä tähtiä on listassa &quot;</span> <span class="o">+</span> <span class="nb">repr</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">pienet</span><span class="p">)))</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Miten saisit vertailtua tähtien kirkkauksia (sekä havaittavaa että absoluuttista) ylläolevaan tapaan? Kokeile!</p>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./harjoitukset"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        
+        <div class='prev-next-bottom'>
+            
+    <a class='left-prev' id="prev-link" href="../intro.html" title="previous page">Tervetuloa avoimen datan pariin</a>
+    <a class='right-next' id="next-link" href="cms-esimerkki.html" title="next page">CMS ja avoin data</a>
+
+        </div>
+        
+        </div>
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By HIP Education and Open Data Team<br/>
+        
+          <div class="extra_footer">
+            <div>
+<a>Toteutettu Opetushallituksen valtionavustuksella tiedekasvatuksen edistämiseen.</a></br><a href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img class="license" alt="Creative Commons License" src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png" /></a> Tämän sivuston materiaali on käytettävissä seuraavalla lisenssillä: <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC-BY 4.0.</a>
+</div>    
+
+          </div>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+
+    
+  <script src="../_static/js/index.d3f166471bb80abb5163.js"></script>
+
+
+    
+  </body>
+</html>
