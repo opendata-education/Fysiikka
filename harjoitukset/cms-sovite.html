@@ -4,7 +4,8 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17: http://docutils.sourceforge.net/" />
+
     <title>Funktion sovittaminen histogrammiin &#8212; Fysiikka</title>
     
   <link rel="stylesheet" href="../_static/css/index.f658d18f9b420779cfdf24aa0a7e2d77.css">
@@ -105,7 +106,7 @@
   </a>
  </li>
 </ul>
-<p class="caption collapsible-parent">
+<p>
  <span class="caption-text">
   Harjoitukset
  </span>
@@ -117,7 +118,7 @@
   </a>
  </li>
 </ul>
-<p class="caption collapsible-parent">
+<p>
  <span class="caption-text">
   Hiukkasfysiikka
  </span>
@@ -269,11 +270,11 @@
         
               <div>
                 
-  <div class="section" id="funktion-sovittaminen-histogrammiin">
+  <section id="funktion-sovittaminen-histogrammiin">
 <h1>Funktion sovittaminen histogrammiin<a class="headerlink" href="#funktion-sovittaminen-histogrammiin" title="Permalink to this headline">¶</a></h1>
 <p>Tutustutaan tässä harjoituksessa siihen, miten histogrammiin voidaan tehdä sovite. Sovite on erinomainen työkalu, kun halutaan selvittää esimerkiksi jakauman odotusarvo ja hajonta. Hiukkasfysiikan tapauksessa tämä tulee kyseeseen, kun pyritään selvittämään histogrammissa olevan piikin paikkaa ja leveyttä.</p>
 <p>Tutkitaan hiukkasfysiikan dataa sellaisista törmäyksistä, joissa on havaittu kaksi myonia. Data on haettu CERN:n avoin data portaalista ja se löytyy tämän notebookin kanssa samasta hakemistosta nimellä “Dimuon_DoubleMu.csv”.</p>
-<div class="section" id="datan-hakeminen-ja-piirtaminen">
+<section id="datan-hakeminen-ja-piirtaminen">
 <h2>Datan hakeminen ja piirtäminen<a class="headerlink" href="#datan-hakeminen-ja-piirtaminen" title="Permalink to this headline">¶</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -483,8 +484,8 @@
 <img alt="../_images/cms-sovite_6_0.png" src="../_images/cms-sovite_6_0.png" />
 </div>
 </div>
-</div>
-<div class="section" id="sovitefunktion-maaritteleminen">
+</section>
+<section id="sovitefunktion-maaritteleminen">
 <h2>Sovitefunktion määritteleminen<a class="headerlink" href="#sovitefunktion-maaritteleminen" title="Permalink to this headline">¶</a></h2>
 <p>Tavoitteenamme on tehdä sovite yllä olevaan jakaumaan. Hiukkasfysiikassa yleisesti käytettävä jakaumafunktio on <a class="reference external" href="https://en.wikipedia.org/wiki/Relativistic_Breit%E2%80%93Wigner_distribution">Breit-Wigner -jakauma</a>, mutta käytetään tässä Gaussin jakaumaa, joka ottaa taustatapahtumat myös huomioon.</p>
 <p>Tällainen Gaussin funktio on muotoa:</p>
@@ -502,8 +503,8 @@
 </div>
 </div>
 </div>
-</div>
-<div class="section" id="sovitteen-tekeminen">
+</section>
+<section id="sovitteen-tekeminen">
 <h2>Sovitteen tekeminen<a class="headerlink" href="#sovitteen-tekeminen" title="Permalink to this headline">¶</a></h2>
 <p>Tehdään seuraavaksi sovite scipy-paketin curve_fit -funktiolla. Meidän tulee kuitenkin ensin määrittää pylväiden keskikohdat, jotta sovite osuu oikealle kohdalle.</p>
 <div class="cell docutils container">
@@ -546,8 +547,8 @@ Piikin leveys =  4.493052850735726
 </div>
 </div>
 <p>Tämän tuloksen perusteella saamme Z-bosonin massaksi noin 90,86 GeV. Kokeile, saatko sovitettua <a class="reference external" href="https://en.wikipedia.org/wiki/Relativistic_Breit%E2%80%93Wigner_distribution">Breit-Wigner -jakauman</a> histogrammiin. Onko sovite parempi kuin Gaussin jakauma? Kokeile myös, miten pylväiden lukumäärän muuttaminen vaikuttaa tulokseen.</p>
-</div>
-</div>
+</section>
+</section>
 
     <script type="text/x-thebe-config">
     {
