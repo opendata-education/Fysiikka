@@ -4,8 +4,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17: http://docutils.sourceforge.net/" />
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CMS ja avoin data &#8212; Fysiikka</title>
     
   <link rel="stylesheet" href="../_static/css/index.f658d18f9b420779cfdf24aa0a7e2d77.css">
@@ -107,7 +106,7 @@
   </a>
  </li>
 </ul>
-<p>
+<p class="caption collapsible-parent">
  <span class="caption-text">
   Harjoitukset
  </span>
@@ -119,7 +118,7 @@
   </a>
  </li>
 </ul>
-<p>
+<p class="caption collapsible-parent">
  <span class="caption-text">
   Hiukkasfysiikka
  </span>
@@ -266,10 +265,10 @@
         
               <div>
                 
-  <section id="cms-ja-avoin-data">
+  <div class="section" id="cms-ja-avoin-data">
 <h1>CMS ja avoin data<a class="headerlink" href="#cms-ja-avoin-data" title="Permalink to this headline">¶</a></h1>
 <p>CERN:n CMS-kokeessa törmäytetään protoneita toisiinsa ja tutkitaan, mitä hiukkasia törmäyksessä syntyy. Törmäystapahtumista kertyy valtava määrä dataa, jota on julkaistu myös avoimesti saataville <a class="reference external" href="https://opendata.cern.ch/">CERN:n avoin data portaalissa</a>. Tässä harjoituksessa tutustutaan siihen, mitä nämä datasetit sisältävät ja mitä niiden avulla voitaisiin selvittää. Tämä tarjoaa oppilaille mainion tilaisuuden kokeilla oikean tieteen metodeja autenttisilla mittaustuloksilla.</p>
-<section id="datan-hakeminen">
+<div class="section" id="datan-hakeminen">
 <h2>1. Datan hakeminen<a class="headerlink" href="#datan-hakeminen" title="Permalink to this headline">¶</a></h2>
 <p>Aloitetaan hakemalla data. Data on ladattu CERN:n avoin data portaalista ja tallennettu samaan hakemistoon tämän notebookin kanssa. Tarkastellaan datatiedostoa <strong>Dimuon_DoubleMu.csv</strong>, joka sisältää dataa törmäystapahtumista, joissa on havaittu kaksi myonia.</p>
 <div class="cell docutils container">
@@ -483,8 +482,8 @@
 </div>
 </div>
 </div>
-</section>
-<section id="invariantti-massa-histogrammi">
+</div>
+<div class="section" id="invariantti-massa-histogrammi">
 <h2>2. Invariantti massa &amp; histogrammi<a class="headerlink" href="#invariantti-massa-histogrammi" title="Permalink to this headline">¶</a></h2>
 <p>Aiemmasta tutkimuksesta tiedetään, että monet eri hiukkaset voivat hajota kahdeksi myoniksi ja että alkuperäinen hiukkanen voidaan tunnistaa laskemalla myoneiden niin sanottu <strong>invariantti massa</strong>. CMS-detektorilla voidaan mitata mm. myoneiden energia ja liikemäärä. Kun nämä suureet tiedetään, myoneiden invariantti massa on</p>
 <p><span class="math notranslate nohighlight">\(M = \sqrt{(E_1 + E_2)^2 - \|\textbf{p}_1 + \textbf{p}_2 \| ^2}\)</span>.</p>
@@ -539,8 +538,8 @@
 </div>
 <p>Huomataan, että datasta erottuu selkeä piikki noin 91 GeV kohdalla. Tämä johtuu siitä, taustatapahtumissa syntyvien kahden myonin lisäksi syntyy paljon sellaisia tapahtumia, joissa myonien invariantti massa on lähellä 91 GeV:iä. Tämä tarkoittaa sitä, että myonit ovat peräisin johtain hiukkasesta, jonka massa on 91 GeV. Tämä hiukkanen tunnetaan nimellä Z-bosoni.</p>
 <p>Kokeile itse etsiä alkuperäisestä datasta toinen piikki, ja katso löydätkö jonkin toisen hiukkasen! Mikä hiukkanen voisi olla kyseessä?</p>
-</section>
-</section>
+</div>
+</div>
 
     <script type="text/x-thebe-config">
     {
