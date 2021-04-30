@@ -359,32 +359,32 @@
 <span class="g g-Whitespace">   </span><span class="mi">1354</span>         <span class="n">bound</span> <span class="o">=</span> <span class="n">new_sig</span><span class="o">.</span><span class="n">bind</span><span class="p">(</span><span class="n">ax</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
 
 <span class="nn">/opt/hostedtoolcache/Python/3.8.9/x64/lib/python3.8/site-packages/matplotlib/axes/_axes.py</span> in <span class="ni">bar</span><span class="nt">(self, x, height, width, bottom, align, **kwargs)</span>
-<span class="g g-Whitespace">   </span><span class="mi">2363</span>                 <span class="n">hatch</span><span class="o">=</span><span class="n">htch</span><span class="p">,</span>
-<span class="g g-Whitespace">   </span><span class="mi">2364</span>                 <span class="p">)</span>
-<span class="ne">-&gt; </span><span class="mi">2365</span>             <span class="n">r</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">kwargs</span><span class="p">)</span>
-<span class="g g-Whitespace">   </span><span class="mi">2366</span>             <span class="n">r</span><span class="o">.</span><span class="n">get_path</span><span class="p">()</span><span class="o">.</span><span class="n">_interpolation_steps</span> <span class="o">=</span> <span class="mi">100</span>
-<span class="g g-Whitespace">   </span><span class="mi">2367</span>             <span class="k">if</span> <span class="n">orientation</span> <span class="o">==</span> <span class="s1">&#39;vertical&#39;</span><span class="p">:</span>
+<span class="g g-Whitespace">   </span><span class="mi">2355</span>                    <span class="n">hatch</span><span class="p">)</span>
+<span class="g g-Whitespace">   </span><span class="mi">2356</span>         <span class="k">for</span> <span class="n">l</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">w</span><span class="p">,</span> <span class="n">h</span><span class="p">,</span> <span class="n">c</span><span class="p">,</span> <span class="n">e</span><span class="p">,</span> <span class="n">lw</span><span class="p">,</span> <span class="n">htch</span> <span class="ow">in</span> <span class="n">args</span><span class="p">:</span>
+<span class="ne">-&gt; </span><span class="mi">2357</span>             <span class="n">r</span> <span class="o">=</span> <span class="n">mpatches</span><span class="o">.</span><span class="n">Rectangle</span><span class="p">(</span>
+<span class="g g-Whitespace">   </span><span class="mi">2358</span>                 <span class="n">xy</span><span class="o">=</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="n">b</span><span class="p">),</span> <span class="n">width</span><span class="o">=</span><span class="n">w</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="n">h</span><span class="p">,</span>
+<span class="g g-Whitespace">   </span><span class="mi">2359</span>                 <span class="n">facecolor</span><span class="o">=</span><span class="n">c</span><span class="p">,</span>
+
+<span class="nn">/opt/hostedtoolcache/Python/3.8.9/x64/lib/python3.8/site-packages/matplotlib/patches.py</span> in <span class="ni">__init__</span><span class="nt">(self, xy, width, height, angle, **kwargs)</span>
+<span class="g g-Whitespace">    </span><span class="mi">750</span>             <span class="o">%</span><span class="p">(</span><span class="n">Patch_kwdoc</span><span class="p">)</span><span class="n">s</span>
+<span class="g g-Whitespace">    </span><span class="mi">751</span>         <span class="s2">&quot;&quot;&quot;</span>
+<span class="ne">--&gt; </span><span class="mi">752</span><span class="s2">         super().__init__(**kwargs)</span>
+<span class="g g-Whitespace">    </span><span class="mi">753</span><span class="s2">         self._x0 = xy[0]</span>
+<span class="g g-Whitespace">    </span><span class="mi">754</span><span class="s2">         self._y0 = xy[1]</span>
+
+<span class="nn">/opt/hostedtoolcache/Python/3.8.9/x64/lib/python3.8/site-packages/matplotlib/patches.py</span> in <span class="ni">__init__</span><span class="nt">(self, edgecolor, facecolor, color, linewidth, linestyle, antialiased, hatch, fill, capstyle, joinstyle, **kwargs)</span>
+<span class="g g-Whitespace">    </span><span class="mi">106</span><span class="s2"> </span>
+<span class="g g-Whitespace">    </span><span class="mi">107</span><span class="s2">         if len(kwargs):</span>
+<span class="ne">--&gt; </span><span class="mi">108</span><span class="s2">             self.update(kwargs)</span>
+<span class="g g-Whitespace">    </span><span class="mi">109</span><span class="s2"> </span>
+<span class="g g-Whitespace">    </span><span class="mi">110</span><span class="s2">     def get_verts(self):</span>
 
 <span class="nn">/opt/hostedtoolcache/Python/3.8.9/x64/lib/python3.8/site-packages/matplotlib/artist.py</span> in <span class="ni">update</span><span class="nt">(self, props)</span>
-<span class="g g-Whitespace">   </span><span class="mi">1045</span>         <span class="s2">&quot;&quot;&quot;</span>
-<span class="g g-Whitespace">   </span><span class="mi">1046</span><span class="s2">         ret = []</span>
-<span class="ne">-&gt; </span><span class="mi">1047</span><span class="s2">         with cbook._setattr_cm(self, eventson=False):</span>
-<span class="g g-Whitespace">   </span><span class="mi">1048</span><span class="s2">             for k, v in props.items():</span>
-<span class="g g-Whitespace">   </span><span class="mi">1049</span><span class="s2">                 if k != k.lower():</span>
-
-<span class="nn">/opt/hostedtoolcache/Python/3.8.9/x64/lib/python3.8/contextlib.py</span> in <span class="ni">helper</span><span class="nt">(*args, **kwds)</span>
-<span class="g g-Whitespace">    </span><span class="mi">238</span><span class="s2">     @wraps(func)</span>
-<span class="g g-Whitespace">    </span><span class="mi">239</span><span class="s2">     def helper(*args, **kwds):</span>
-<span class="ne">--&gt; </span><span class="mi">240</span><span class="s2">         return _GeneratorContextManager(func, args, kwds)</span>
-<span class="g g-Whitespace">    </span><span class="mi">241</span><span class="s2">     return helper</span>
-<span class="g g-Whitespace">    </span><span class="mi">242</span><span class="s2"> </span>
-
-<span class="nn">/opt/hostedtoolcache/Python/3.8.9/x64/lib/python3.8/contextlib.py</span> in <span class="ni">__init__</span><span class="nt">(self, func, args, kwds)</span>
-<span class="g g-Whitespace">     </span><span class="mi">84</span><span class="s2">         self.func, self.args, self.kwds = func, args, kwds</span>
-<span class="g g-Whitespace">     </span><span class="mi">85</span><span class="s2">         # Issue 19330: ensure context manager instances have good docstrings</span>
-<span class="ne">---&gt; </span><span class="mi">86</span><span class="s2">         doc = getattr(func, &quot;__doc__&quot;, None)</span>
-<span class="g g-Whitespace">     </span><span class="mi">87</span><span class="s2">         if doc is None:</span>
-<span class="g g-Whitespace">     </span><span class="mi">88</span><span class="s2">             doc = type(self).__doc__</span>
+<span class="g g-Whitespace">   </span><span class="mi">1062</span><span class="s2">                         raise AttributeError(f&quot;{type(self).__name__!r} object &quot;</span>
+<span class="g g-Whitespace">   </span><span class="mi">1063</span><span class="s2">                                              f&quot;has no property </span><span class="si">{k!r}</span><span class="s2">&quot;)</span>
+<span class="ne">-&gt; </span><span class="mi">1064</span><span class="s2">                     ret.append(func(v))</span>
+<span class="g g-Whitespace">   </span><span class="mi">1065</span><span class="s2">         if ret:</span>
+<span class="g g-Whitespace">   </span><span class="mi">1066</span><span class="s2">             self.pchanged()</span>
 
 <span class="ne">KeyboardInterrupt</span>: 
 </pre></div>
