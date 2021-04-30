@@ -5,6 +5,7 @@
 - part: Harjoitukset
   chapters:
   - file: harjoitukset/taivasta-kartoittamassa
+  - file: harjoitukset/veden-lampeneminen
 
 - part: Hiukkasfysiikka
   chapters:
