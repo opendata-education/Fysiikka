@@ -1,14 +1,14 @@
 # Table of contents
 # Learn more at https://jupyterbook.org/customize/toc.html
-- file: intro
-
-- part: Harjoitukset
-  chapters:
+format: jb-book
+root: intro
+chapters:
+- file: harjoitukset/otsikko
+  sections:
   - file: harjoitukset/taivasta-kartoittamassa
   - file: harjoitukset/veden-lampeneminen
-
-- part: Hiukkasfysiikka
-  chapters:
+- file: harjoitukset/hiukkasfysiikka
+  sections:
   - file: harjoitukset/cms-esimerkki
   - file: harjoitukset/cms-animaatio
   - file: harjoitukset/cms-sovite
